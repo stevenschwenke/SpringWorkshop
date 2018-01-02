@@ -19,10 +19,10 @@
 - a lot of projects around Spring Core, for example Data, MVC, Security, Boot
 
 ## Hello World
-- in 01_helloWorld major concepts of Spring shown in practice
+- in package 01_helloWorld major concepts of Spring shown in practice
 
 ## Dependency Injection & Inversion of Control
-- in 02_dependencyInjection major concepts of Spring shown in practice
+- package 02_dependencyInjection
 - Spring manages dependencies
 - dependencies can be composed at runtime instead of compile time. Often-seen example in legacy code: data-sources hardwired to classes using them. 
 
@@ -31,6 +31,17 @@
 1. setter-based
 - [constructor-based DI is preferred](https://stevenschwenke.de/useDependencyInjectionViaConstructor)
 - interface-based DI: best practice to code dependencies to an interface, for more flexibility in testing
+
+## Spring Profiling
+- package 03_profiling
+- different profiles cause different beans to be injected
+
+### Default profiles
+- if profile in service-impl-classes is "default", this implementation is chosen if no active profile is set in properties-file (and gets overridden if there is a profile in the properties file)
+- an implementation can be default and additionally named:
+
+    @Profile({"default", "english"})
+
 
 ## Tooling
 - Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
