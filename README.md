@@ -1,5 +1,7 @@
 # SpringPlayground
 
+These are my notes on the great course [Spring Core - Learn Spring Framework 4 and Spring Boot on Udemy](https://www.udemy.com/spring-core). This repository does not include everything mentioned in the course, so go ahead and have a look at the other great courses from the [springframeworkguru John Thompson](https://springframework.guru)!
+
 ## History
 - 1998 EJB Specification, aimed for scalability, security, high availability, by Sun. Multiple problems in usage, for example tightly coupled to application server
 - 2004 first release Spring as OpenSource (Spring Source, today Pivotal). Better testability because parts of implementation easily interchangeable by mocks or other implementations
@@ -40,8 +42,27 @@
 - if profile in service-impl-classes is "default", this implementation is chosen if no active profile is set in properties-file (and gets overridden if there is a profile in the properties file)
 - an implementation can be default and additionally named:
 
+
     @Profile({"default", "english"})
 
+### Spring Java Configuration
+- originally, Spring used XML-based configuration
+- movement towards Java configuration
+- today: everything possible with XML also possible in Java config
+- Java config debuggable, huge plus
+- package 04_javaConfiguration
+- Spring Boot sets up a component scan for the package that it's in
+- in code for this section: _JavaConfigurationApplication_ moved to package _springboot_ so that automatic component scan will not detect other classes
+- adding manual scan to _JavaConfigurationApplication_ solves this:
+
+
+    @ComponentScan("demo")
+
+- Moving declaration of _HelloWorldServiceEnglishImpl_ and _HelloWorldServiceSpanishImpl_ from these classes to new class _Config_    
+
+## Other concepts mentioned in the course
+- @Primary to mark the primary interface in case of multiple candidates are found
+- @Qualifier in combination with @Bean(name="xy") to autowire by name instead of by type
 
 ## Tooling
 - Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
