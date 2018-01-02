@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.stevenschwenke.java.spring</groupId>
-    <artifactId>helloWorld</artifactId>
+    <artifactId>dependencyInjection</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>helloWorld</name>
+    <name>dependencyInjection</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -20,7 +20,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>demo.HelloWorldApplication</start-class>
+        <start-class>demo.DependencyInjectionApplication</start-class>
         <java.version>1.7</java.version>
     </properties>
 

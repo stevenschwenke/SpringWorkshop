@@ -13,7 +13,7 @@
 	- = dependent objects are injected into class at hand
 	- first largely absent in original EJB specification
 - Inversion of Control (IoC)
-	- Spring Framework manages software components and injection of components into dependent objects
+	- Spring Framework is in control and manages software components and injection of components into dependent objects
 - DI + IoC allow for loosely coupled classes: when testing a web controller, inject mock database or mock service instead of the real classes
 - Spring Context = "what all brings together". Knows beans and configuration and injects objects accordingly
 - a lot of projects around Spring Core, for example Data, MVC, Security, Boot
@@ -21,7 +21,22 @@
 ## Hello World
 - in 01_helloWorld major concepts of Spring shown in practice
 
+## Dependency Injection & Inversion of Control
+- in 02_dependencyInjection major concepts of Spring shown in practice
+- Spring manages dependencies
+- dependencies can be composed at runtime instead of compile time. Often-seen example in legacy code: data-sources hardwired to classes using them. 
+
+### types of DI
+1. constructor-based
+1. setter-based
+- [constructor-based DI is preferred](https://stevenschwenke.de/useDependencyInjectionViaConstructor)
+- interface-based DI: best practice to code dependencies to an interface, for more flexibility in testing
+
+## Tooling
+- Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
+
 # TODO
+[ ] Read forums on Udemy
 [ ] Have a look at Martins Github-Repos
 
 # sources

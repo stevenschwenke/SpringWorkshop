@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class DemoApplication {
+public class HelloWorldApplication {
 
     public static void main(String[] args) {
-        ApplicationContext ctx = SpringApplication.run(DemoApplication.class, args);
+        ApplicationContext ctx = SpringApplication.run(HelloWorldApplication.class, args);
         HelloWorld helloWorld = (HelloWorld) ctx.getBean("helloWorld");
         helloWorld.sayHello();
     }
