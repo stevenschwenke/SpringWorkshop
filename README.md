@@ -75,6 +75,14 @@ These are my notes on the great course [Spring Core - Learn Spring Framework 4 a
     1. created via IntelliJ IDEA Spring initializr with _web_ and _Thymeleaf_
     2. _IndexController_ and _index.html_ manually added as first, very simple parts 
 
+### WebJars
+- package _06_SpringMVCWebJars_
+- "[webjars](https://www.webjars.org) are client-side web libraries packaged into JAR files"
+- no need to manually put single files into resource folders
+- instead insert into project using Maven
+- in this project: BootstrapCSS and JQuery
+- both not latest version to keep course compatible with what John Thompson showed 
+- difference to _05_SpringMVCHelloWorld_; different styling + (viewed from browser) source code of page
 
 ## Tooling
 - Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
