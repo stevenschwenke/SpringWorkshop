@@ -45,7 +45,7 @@ These are my notes on the great course [Spring Core - Learn Spring Framework 4 a
 
     @Profile({"default", "english"})
 
-### Spring Java Configuration
+## Spring Java Configuration
 - originally, Spring used XML-based configuration
 - movement towards Java configuration
 - today: everything possible with XML also possible in Java config
@@ -63,6 +63,18 @@ These are my notes on the great course [Spring Core - Learn Spring Framework 4 a
 ## Other concepts mentioned in the course
 - @Primary to mark the primary interface in case of multiple candidates are found
 - @Qualifier in combination with @Bean(name="xy") to autowire by name instead of by type
+
+## Spring MVC
+- Spring module dealing with web requests, REST services and SOAP-Services
+- MVC = design pattern to separate concerns. So don't let the view make database requests or your controllers talk to other web services!
+![alt_text](slides/springMVC.png)
+- developer only has to implement controllers, views and services (others provided by Spring)
+
+### Hello World
+- package _05_SpringMVCHelloWorld_ 
+    1. created via IntelliJ IDEA Spring initializr with _web_ and _Thymeleaf_
+    2. _IndexController_ and _index.html_ manually added as first, very simple parts 
+
 
 ## Tooling
 - Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
