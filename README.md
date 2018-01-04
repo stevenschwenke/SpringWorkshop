@@ -82,7 +82,8 @@ These are my notes on the great course [Spring Core - Learn Spring Framework 4 a
 - instead insert into project using Maven
 - in this project: BootstrapCSS and JQuery
 - both not latest version to keep course compatible with what John Thompson showed 
-- difference to _05_SpringMVCHelloWorld_; different styling + (viewed from browser) source code of page
+- difference to _05_SpringMVCHelloWorld_; different styling + (viewed from browser) source code of page + backend implementation
+- use case: listing all products in a table (without actual database, that's simulated via a HashMap)
 
 ## Tooling
 - Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
