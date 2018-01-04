@@ -2,6 +2,8 @@
 
 These are my notes on the great course [Spring Core - Learn Spring Framework 4 and Spring Boot on Udemy](https://www.udemy.com/spring-core). This repository does not include everything mentioned in the course, so go ahead and have a look at the other great courses from the [springframeworkguru John Thompson](https://springframework.guru)!
 
+Also, the most part of this code is also published in [Johns repository for the workshop](https://github.com/springframeworkguru/spring-core-spring-mvc).
+
 ## History
 - 1998 EJB Specification, aimed for scalability, security, high availability, by Sun. Multiple problems in usage, for example tightly coupled to application server
 - 2004 first release Spring as OpenSource (Spring Source, today Pivotal). Better testability because parts of implementation easily interchangeable by mocks or other implementations
@@ -83,7 +85,9 @@ These are my notes on the great course [Spring Core - Learn Spring Framework 4 a
 - in this project: BootstrapCSS and JQuery
 - both not latest version to keep course compatible with what John Thompson showed 
 - difference to _05_SpringMVCHelloWorld_; different styling + (viewed from browser) source code of page + backend implementation
-- use case: listing all products in a table (without actual database, that's simulated via a HashMap)
+- different use cases commited in multiple commits:
+    - listing all products in a table (without actual database, that's simulated via a HashMap)
+    - generating a link for each product to see it in detail
 
 ## Tooling
 - Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
