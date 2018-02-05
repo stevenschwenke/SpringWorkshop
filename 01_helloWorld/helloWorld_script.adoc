@@ -1,0 +1,11 @@
+= Hello World
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+== Things to see in this chapter
+* Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications
+* @SpringBootApplication in HelloWorldApplication.java = Starter-Annotation
+* @Component in HelloWorld.java = minimal annotation to add a class as a Spring component (= "managed bean")
+* @RunWith(SpringJUnit4ClassRunner.class) and  @SpringApplicationConfiguration(classes = HelloWorldApplication.class) in HelloWorldApplicationTests = run tests with Spring context

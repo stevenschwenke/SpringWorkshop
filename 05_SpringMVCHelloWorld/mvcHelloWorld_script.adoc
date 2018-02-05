@@ -1,0 +1,50 @@
+= MVC Hello World
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+- Spring module dealing with web requests, REST services and SOAP-Services
+- MVC = design pattern to separate concerns. So don't let the view make database requests or your controllers talk to other web services!
+- MVC uses dispatcher servlet to handle requests:
+
+image::dispatcherServlet1.png[]
+Client has a request
+
+image::dispatcherServlet2.png[]
+Request is accepted by Dispatcher Servlet
+
+image::dispatcherServlet3.png[]
+Dispatcher Servlet determines matching controller for request ...
+
+image::dispatcherServlet4.png[]
+and forwards request.
+
+image::dispatcherServlet5.png[]
+Controller may call a service for business logic, ...
+
+image::dispatcherServlet6.png[]
+which itself can call a data layer.
+
+image::dispatcherServlet7.png[]
+The result is returned to the controller.
+
+image::dispatcherServlet8.png[]
+The resulting model is returned to the Dispatcher Servlet ...
+
+image::dispatcherServlet9.png[]
+and gets forwarded to a view.
+
+image::dispatcherServlet10.png[]
+The data-injected view is returned to the Dispatcher Servlet ...
+
+image::dispatcherServlet11.png[]
+to be returned to the client.
+
+- developer only has to implement controllers, views and services (others provided by Spring):
+
+image::dispatcherServlet12.png[]
+
+== Hello World
+. created via IntelliJ IDEA Spring initializr with _web_ and _Thymeleaf_
+. _IndexController_ and _index.html_ manually added as first, very simple parts

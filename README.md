@@ -10,6 +10,7 @@ Also, the most part of this code is also published in [Johns repository for the 
 - today: Spring greatest market share. However, EJB also developed further. However, a lot of debate on how EJB will be developed in the future.
 
 ## Spring Core
+![alt_text](images/springConcepts.png)
 - = central part of Spring framework
 - Spring beans = simple Java Objects (POJO)
 - by design, Spring Beans are meant to be simple, not overly complex objects (Single Responsibility Principle)
@@ -22,12 +23,8 @@ Also, the most part of this code is also published in [Johns repository for the 
 - Spring Context = "what all brings together". Knows beans and configuration and injects objects accordingly
 - a lot of projects around Spring Core, for example Data, MVC, Security, Boot
 
-## Tooling
-- Spring Initializr in IntelliJ IDEA: File -> new -> Project -> Spring Initializr -> easy setup for new applications 
-
-# TODO
-[ ] Read forums on Udemy
-[ ] Have a look at Martins Github-Repos
+## Content
+__The main content of this workshop can be found in the submodules, in ascending order.__
 
 # sources
 - [Spring Core - Learn Spring Framework 4 and Spring Boot (Udemy)](https://www.udemy.com/spring-core)

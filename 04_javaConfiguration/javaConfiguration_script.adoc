@@ -1,0 +1,22 @@
+= Java Configuration
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+- originally, Spring used XML-based configuration
+- movement towards Java configuration
+- today: everything possible with XML also possible in Java config
+- Java config debuggable, huge plus
+- Spring Boot sets up a component scan for the package that it's in
+- in code for this section: _JavaConfigurationApplication_ moved to package _springboot_ so that automatic component scan will not detect other classes
+- adding manual scan to _JavaConfigurationApplication_ solves this:
+
+
+    @ComponentScan("demo")
+
+- Moving declaration of _HelloWorldServiceEnglishImpl_ and _HelloWorldServiceSpanishImpl_ from these classes to new class _Config_
+
+== Other concepts mentioned in the course
+- @Primary to mark the primary interface in case of multiple candidates are found
+- @Qualifier in combination with @Bean(name="xy") to autowire by name instead of by type
