@@ -1,0 +1,14 @@
+= MVC Hello World
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+- Spring module dealing with web requests, REST services and SOAP-Services
+- MVC = design pattern to separate concerns. So don't let the view make database requests or your controllers talk to other web services!
+![alt_text](slides/springMVC.png)
+- developer only has to implement controllers, views and services (others provided by Spring)
+
+== Hello World
+. created via IntelliJ IDEA Spring initializr with _web_ and _Thymeleaf_
+. _IndexController_ and _index.html_ manually added as first, very simple parts
