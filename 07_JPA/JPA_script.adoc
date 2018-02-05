@@ -1,0 +1,38 @@
+= JPA
+:toc:
+:toclevels: 1
+:sectnums:
+:imagesdir: images
+
+== Overview
+* First, a look at pure JPA. Then: Spring Data JPA.
+* mapping object entities to relational tables
+* Hibernate = JPA Implementation
+* H2 Database (in-memory)
+* DDL = Data Definition Language to create tables
+* Hibernate can pre-populate database with DDL
+* business objects become entity classes via annotations
+* Spring enables database switches, for example from MySQL to H2 to HSQL
+
+== JPA
+* Java Persistence API
+* standard in Java for ORM (Object relational mapping)
+* JPA 1.0 in 2006
+* most recent: JPA 2.1 (2013)
+* JPA just an API standard!
+* two big implementations:
+** Hibernate
+** EclipseLink
+
+== Basic JPA-Concepts
+* *JPA-Entity* = POJO = Plain Old Java Object = just properties, getters and setters
+* *Entity Manager* = object used to persist / fetch objects from database
+* *Transactions* allow rollback or commit, hence avoid partial transactions being persisted
+* *Relationships:*
+** OneToOne
+** OneToMany (list)
+** ManyToMany (two related lists)
+** embedded (object stored within an object)
+* *Criteria API* = Java-based API to write queries in Java (instead of SQL)
+* *Data Access Object* = DAO = common design pattern for clean abstraction of dealing with EntityManager and transactions
+* *Repository Pattern* = similar to DAO, but greater abstraction. Used by Spring Data JPA.
