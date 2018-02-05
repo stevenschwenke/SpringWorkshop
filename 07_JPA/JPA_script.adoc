@@ -51,5 +51,5 @@
 * added dependencies to JPA and H2
 * Make Product an entity
 * enable H2 console in application.properties, can be reached at http://localhost:8080/h2-console with jdbc:h2:mem:testdb, user name = "sa" and an empty password
-
-TODO complete changes
+* add new implementation for ProductService that uses Spring Data JPA
+* add profiles to switch between the map- and Spring Data JPA implementation
