@@ -1,9 +1,15 @@
 package de.stevenschwenke.java.spring.mvc.domain;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Product {
-    Integer id;
+@Entity
+public class Product implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     private String description;
     private BigDecimal price;
     private String imageUrl;

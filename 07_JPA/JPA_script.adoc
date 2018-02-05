@@ -36,3 +36,20 @@
 * *Criteria API* = Java-based API to write queries in Java (instead of SQL)
 * *Data Access Object* = DAO = common design pattern for clean abstraction of dealing with EntityManager and transactions
 * *Repository Pattern* = similar to DAO, but greater abstraction. Used by Spring Data JPA.
+
+*Spring Boot creates all important beans automatically!* Normally, stuff like EntityManager and TransactionManagers would have to be created manually.
+
+== Making "Product" an Entity
+* Just add @Entity to class signature
+* Spring Boot will perform a package scan and find the new entity
+* because H2 is on the classpath, Spring Boot will start the H2 server while starting the application server
+* also, tables will be created using the DDL created automatically
+* after application server startup, table PRODUCT can be seen via http://localhost:8080/h2-console with jdbc:h2:mem:testdb, user name = "sa" and an empty password
+* a lot of "magic" going on here, but everything can be modified
+
+== Differences to former MVC-Project
+* added dependencies to JPA and H2
+* Make Product an entity
+* enable H2 console in application.properties, can be reached at http://localhost:8080/h2-console with jdbc:h2:mem:testdb, user name = "sa" and an empty password
+
+TODO complete changes
