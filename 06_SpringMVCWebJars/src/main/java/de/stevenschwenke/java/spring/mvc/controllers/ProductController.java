@@ -54,4 +54,10 @@ public class ProductController {
         // after saving, redirect to details page of saved product:
         return "redirect:/product/" + savedProduct.getId();
     }
+
+    @RequestMapping("/product/delete/{id}")
+    public String delete(@PathVariable Integer id) {
+        productService.deleteProduct(id);
+        return "redirect:/products";
+    }
 }
