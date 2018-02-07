@@ -1,0 +1,30 @@
+= Spring Exercises
+
+. What is a POJO?
+. What is Dependency Injection (DI)?
+. What is Inversion of Control (IoC)?
+. What is the difference between DI and IoC?
+. Name three projects of the Spring ecosystem.
+. What does @SpringBootApplication do when added to a class?
+. What does @Component do when added to a class?
+. What is the component scan?
+. What is the Application Context?
+. What does @Autowired do?
+. There are two approaches to where @Autowired is placed. What are they? Which should be used?
+. What are Spring profiles?
+. What is Java configuration in Spring? Why is it preferable to XML-based configuration?
+. Imagine you have to classes implementing the same interfaces, both being Spring components. How can Spring determine which implementation to use?
+. Explain the MVC pattern.
+. In the example code shown in the lectures, the MVC pattern was shown with a running Tomcat server and a small web application. However, there is no configuration about the URL or port of this server. Why does it start / Where is the configuration comming from?
+. What does @RequestMapping("/products") do?
+. What does @RequestMapping("/product/edit/{id}") do? Why is "id" in brackets? To make that work, there has to be done something else in the method signature. What is it?
+. What is ORM?
+. What is JPA? What is Spring Data JPA? How are they related? How does Hibernate fit in this picture?
+. What is an Entity and how does a POJO become an entity?
+. What is a Repository?
+. Every Entity needs an ID. In Java, what has to be done to implement this?
+. Explain the following code snippet. Say something about the annotation, the super class and the generics used. Also, this class is empty. What can a client / caller expect this class to do?
+
+    @Repository
+    public interface ProductRepository extends JpaRepository<Product, Integer> {
+    }
