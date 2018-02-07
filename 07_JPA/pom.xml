@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.stevenschwenke.java.spring</groupId>
-    <artifactId>07_JPA</artifactId>
+    <artifactId>JPA</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
