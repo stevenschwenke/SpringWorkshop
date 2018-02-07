@@ -5,13 +5,12 @@
 :imagesdir: images
 
 == Overview
-* First, a look at pure JPA. Then: Spring Data JPA.
-* mapping object entities to relational tables
-* Hibernate = JPA Implementation
-* H2 Database (in-memory)
-* DDL = Data Definition Language to create tables
-* Hibernate can pre-populate database with DDL
-* business objects become entity classes via annotations
+* concept of persisting: making data available even after application restart
+* often used: relational databases (Oracle, MySQL, ...)
+* *ORM* = object relational mapper = mapping object entities to relational tables
+* different approaches and technologies - important in this course: "pure JPA" and Spring Data JPA.
+* we use H2 Database (in-memory)
+* *DDL* = Data Definition Language to create tables
 * Spring enables database switches, for example from MySQL to H2 to HSQL
 
 == JPA
